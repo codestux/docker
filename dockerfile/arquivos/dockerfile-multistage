@@ -1,0 +1,8 @@
+FROM golang:1.22.4 AS codestream
+WORKDIR /app
+COPY . ./
+RUN go build hello.go
+
+FROM alpine:3.20.0
+COPY --from=codestream /app/hello /app/hello
+CMD ["/app/hello"]

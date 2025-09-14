@@ -1,0 +1,11 @@
+FROM ubuntu:24.04
+LABEL creator: carandre@codestream.com.br
+RUN apt update && apt full-upgrade -y && apt install nginx curl -y && apt clean && rm -rf /var/lib/apt/lists/*
+ADD go.tar.gz /root/go/
+COPY index.html /var/www/html/
+EXPOSE 80
+ENV APP_VERSION=1.0.0
+WORKDIR /var/www/html
+ENTRYPOINT ["nginx"]
+CMD ["-g", "daemon off;"]
+HEALTHCHECK --timeout=2s CMD curl -f localhost || exit 1

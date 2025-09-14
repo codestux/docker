@@ -1,0 +1,35 @@
+# Docker
+
+Minhas anotações dos estudos sobre Docker.
+
+## Índice
+
+- [Docker](docker/docker/md#docker)
+- [Camadas do Docker](docker/docker.md/#camadas-do-docker)
+- [Instalação](instalacao/#instalação)
+  - [Debian e seus derivados](instalacao/instalacao.md#debian-e-seus-derivados)
+  - [Arch Linux e seus derivados](instalacao/instalacao.md#arch-linux-e-seus-derivados)
+  - [Verificando a versão do Docker](instalacao/instalacao.md#verificando-a-versão-do-docker)
+  - [Testando o ambiente Docker](instalacao/instalacao.md#testando-o-ambiente-docker)
+- [Gerenciando container no Docker](gerenciando-docker/container.md/#gerenciando-container)
+  - [Criando container](gerenciando-docker/container.md/#criando-um-container)
+  - [Acessando container](gerenciando-docker/container.md/#acessando-um-container)
+  - [Criando container](gerenciando-docker/container.md/#listando-container)
+  - [Executando comandos no container](gerenciando-docker/container.md/#executando-comandos-no-container)
+  - [Controle de execução do container](gerenciando-docker/container.md/#controle-de-execução-do-container)
+  - [Saindo de um container](gerenciando-docker/container.md/#saindo-de-um-container)
+  - [Métricas de container](gerenciando-docker/container.md/#métricas-do-container)
+  - [Removendo container](gerenciando-docker/container.md/#removendo-container)
+- [Gerenciando imagem no Docker](gerenciando-docker/imagem.md/#gerenciando-imagem)
+  - [O que é uma imagem?](gerenciando-docker/imagem.md/#o-que-é-uma-imagem)
+  - [O que é uma imagem distroless?](gerenciando-docker/imagem.md/#imagem-distroless)
+  - [Imagem sem criar container](gerenciando-docker/imagem.md/#baixando-uma-imagem-sem-criar-um-container)
+  - [Listando imagens de container](gerenciando-docker/imagem.md/#verificando-imagens-dos-container)
+  - [Detalhes da imagem](gerenciando-docker/imagem.md/#verificando-informações-das-imagens)
+  - [Removendo imagens de container](gerenciando-docker/imagem.md/#removendo-imagens)
+  - [Criando image com Dockerfile](gerenciando-docker/imagem.md/#criando-uma-image-com-dockerfile)
+- [Dockerfile](dockerfile/dockerfile.md/#dockerfile)
+  - [Configurações do Dockerfile](dockerfile/dockerfile.md/#opções-do-arquivo-dockerfile)
+  - [Exemplo do arquivo Dockerfile](dockerfile/dockerfile.md/#exemplo-de-um-arquivo-dockerfile)
+  - [Configurações do Dockerfile Multistage](dockerfile/multistage.md/#multistage)
+  - [Exemplo do arquivo Dockerfile Multistage](dockerfile/multistage.md/#exemplo-de-um-multi-stage)
