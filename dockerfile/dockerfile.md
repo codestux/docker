@@ -49,12 +49,11 @@ As linhas abaixo são as instruções de criação de uma imagem de container. A
 Abaixo temos um exemplo de como é um arquivo Dockefile.
 
 ```dockerfile
-FROM debian:12
+FROM debian:13
 MAINTAINER codestream
-LABEL creator: carandre@codestream.com.br
+COPY . /app
 WORKDIR /app
 RUN apt update && apt install nginx -y
-ADD https://drive.google.com/file/d/1bs5v7oTTUIXbNwv6RRGYJdDAGd4VDg8E/view?usp=sharing
 EXPOSE 1818
 ENV APP="My App"
 ARG MYAPP="Test"

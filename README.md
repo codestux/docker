@@ -33,3 +33,6 @@ Minhas anotações dos estudos sobre Docker.
   - [Exemplo do arquivo Dockerfile](dockerfile/dockerfile.md/#exemplo-de-um-arquivo-dockerfile)
   - [Configurações do Dockerfile Multistage](dockerfile/multistage.md/#multistage)
   - [Exemplo do arquivo Dockerfile Multistage](dockerfile/multistage.md/#exemplo-de-um-multi-stage)
+- [Volumes](volumes/volumes.md/#docker-volumes)
+  - [Particularidades de volumes e container](volumes/volumes.md/#particularidades-entre-volumes-e-container)
+  - [Volume no arquivo Dockerfile](volumes/volumes.md/#volume-no-arquivo-dockerfile)

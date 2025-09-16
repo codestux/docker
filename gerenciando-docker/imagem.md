@@ -12,7 +12,7 @@ Mas, criar uma imagem distroless exige conhecer profundamente o que é necessár
 
 Podemos usar imagens distroless do Google ou Chainguard.
 
-# Baixando uma imagem sem criar um container
+## Baixando uma imagem sem criar um container
 
 Podemos baixar uma imagem para uso no futuro e sem criar um container.
 
@@ -54,7 +54,15 @@ O arquivo **Dockerfile** tem os comandos necessários para construir a imagem de
 docker image build -t my-nginx:2.0 .
 ```
 
+Podemos passar um argumento no momento da criação da imagem.
+
+```bash
+docker image build -t my-nginx:2.0 --build-arg APP=test .
+```
+
 A opção -t é uma tag que passamos para identificar a imagem e o ponto(.) é para informar que o arquivo Dockerfile está no mesmo nível.
+
+Observar que existe o ponto no final do comando que indica que o arquivo está no mesmo nível do diretório.
 
 ## Renomeando uma image
 
