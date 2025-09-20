@@ -10,7 +10,7 @@ São imagem construídas sem usar uma imagem base. Tem somente o que a aplicaç�
 
 Mas, criar uma imagem distroless exige conhecer profundamente o que é necessário e sua manutenção fica um pouco mais complicada porque não há um bash ou funções do OS para nos ajudar.
 
-Podemos usar imagens distroless do Google ou Chainguard.
+Podemos usar imagens distroless do Google ou [Chainguard](https://chainguard.dev).
 
 ## Baixando uma imagem sem criar um container
 
@@ -70,4 +70,12 @@ Com a imagem gerada, podemos alterar o seu nome com o comando abaixo.
 
 ```
 docker image tag nome-image novo-nome-imagem
+```
+
+## Visualizando as camadas de uma imagem
+
+Para verificar as camadas de uma imagem o comando abaixo pode ser executado.
+
+```bash
+docker history nome-da-imagem:tag
 ```

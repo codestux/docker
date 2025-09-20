@@ -4,6 +4,8 @@ Volumes são diretórios externos ao container e que são montados diretamente n
 
 A função dos volumes é persistir dados. O filesystem dos containers são voláteis e os dados escritos neles são perdidos assim que o container não estiver em execução. Nos volumes os dados persistem independente do estado do container.
 
+Os volumes são montados em **/var/lib/docker/volumes/**.
+
 ## Particularidades entre volumes e container
 
 1. O volume é inicializados quando o container é criado.
@@ -30,9 +32,9 @@ VOLUME /app/dados
 CMD ["/app/hello"]
 ```
 
-Existem 03 tipos. São eles.
+## Tipos de volumes
 
-# Bind
+### Bind
 
 Quando precisamos montar um diretório do nosso host em um container.
 
@@ -40,62 +42,68 @@ Esses volumes ficam mapeados e quando alteramos algo em um dos diretórios o out
 
 Podemos montar diretórios e arquivos nos volumes.
 
-# Montando o volume Bind
+#### Montando o volume Bind
 
 O comando abaixo irá montar o volume.
 
-```
+```bash
 docker container run -it --name volume-test -v /home/carandre/Docker/Volumes:/volumes ubuntu:24.04
 ```
 
-```
+```bash
 docker run -it --name debian-volume --mount type=bind,source=/opt/test,target=/test nome-da-imagem
 ```
 
 Podemos passar no comando o tipo de escrita e leitura do volume.
 
-```
-docker run -it --name debian-volume --mount type=bind,source=/opt/test,target=/test nome-da-imagem, (ro ou readonly)
+```bash
+docker run -it --name debian-volume --mount type=bind,source=/opt/test,target=/test,(ro ou readonly), nome-da-imagem
 ```
 
-# Volume
+#### Montando o volume Volume
 
 Quando precisamos definir um volume sem precisar definir a fonte e queremos que o diretório fique na estrutura do container para ser gerenciado. Todo o gerenciamento pode ser feito por comandos do Docker.
 
-Os volumes criados ficam em uma pasta /docker/volume e um diretório é criado com o mesmo nome.
+Os volumes criados ficam em uma pasta **/docker/volume** e um diretório é criado com o mesmo nome.
 
-Para listar os volumes existentes, executamos o comando abaixo.
+Listando os volumes existentes.
 
-```
+```bash
 docker volume ls
 ```
 
-Para criar um volume usamos o comando abaixo.
+Criando um volume.
 
-```
+```bash
 docker volume create nome-volume
 ```
 
-Podemos montar o volume como o comando abaixo.
+Montando um volume.
 
-```
-docker run -it --name debian-vol --mount type=volume,source=nome-do-volume,target=/giropops debian
-```
-
-```
+```bash
 docker run -it --name debian-vol -v giropops:/code-test:ro debian
 ```
 
-Para inspecionar um volume podemos usar o comando abaixo.
-
+```bash
+docker run -it --name debian-vol --mount type=volume,source=nome-do-volume,target=/giropops debian
 ```
+
+Inspecionando um volume.
+
+```bash
 docker volume inspect nome-do-volume
 ```
 
-Para remover um volume o comando abaixo deve ser executado.
+Removendo volume.
 
-```
+```bash
 docker volume rm nome-do-volume
+```
+
+Removendo todos os volumes não utilizados.
+
+```bash
+docker volume prune
 ```
 
 # Tmpfs
@@ -104,6 +112,6 @@ docker volume rm nome-do-volume
 
 Para criar um volume temporário usamos o comando abaixo.
 
-```
+```bash
 docker run -it --name debian-vol --mount type=tmpfs,target=/codestream debian
 ```
