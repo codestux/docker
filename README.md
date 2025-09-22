@@ -58,6 +58,39 @@ Minhas anotações dos estudos sobre Docker.
   - [Gerando chaves pública e privada](ferramentas/cosign.md#gerando-o-par-de-chaves-privada-e-pública)
   - [Assinando uma imagem](ferramentas/cosign.md#assinando-uma-imagem)
   - [Verificando imagem assinada](ferramentas/cosign.md#verificando-image-assinada)
+- [Rede Docker](redes/networks.md#rede-docker)
+  - [Criando redes](redes/networks.md#criando-uma-rede)
+  - [Listando redes](redes/networks.md#listando-redes)
+  - [Detalhes de redes](redes/networks.md#detalhes-de-uma-rede)
+  - [Removendo redes](redes/networks.md#removendo-uma-rede)
+  - [Adicionando container a uma rede](redes/networks.md#adicionando-container-a-uma-rede)
+  - [Conectando e desconectando container em uma rede](redes/networks.md#conectando-e-desconectando-container-em-uma-rede)
+  - [Removendo redes sem container](redes/networks.md#removendo-redes-sem-container)
+- [Limitando recursos para o container](recursos/limitando-recursos.md#limitando-recursos-para-o-container)
+  - [Limitando uso de CPU](recursos/limitando-recursos.md#limitando-o-uso-de-CPU)
+  - [Limitando uso de memória](recursos/limitando-recursos.md#limitando-o-uso-de-memória)
+- [Docker Compose](docker-compose/docker-compose.md#docker-compose)
+  - [Criando image](docker-compose/docker-compose.md#criando-a-imagem)
+  - [Removendo image](docker-compose/docker-compose.md#removendo-a-imagem)
+  - [Verificando container em execução](docker-compose/docker-compose.md#verificando-containers-em-execução)
+  - [Pausando container](docker-compose/docker-compose.md#pausando-um-container)
+  - [Removendo pausa de container](docker-compose/docker-compose.md#removendo-pausa-do-container)
+  - [Logs dos container](docker-compose/docker-compose.md#logs-dos-container)
+  
+  
+
+
+ 
+
+  
+
+  
+  
+  
+  
+  
+
+  
   
 
   

@@ -1,0 +1,47 @@
+services:
+  giropops:
+    image: carandre/linuxtips-giropops-senhas:1.0
+    ports:
+      - "5000:5000"
+    container_name: giropops-senhas-container
+    networks:
+      - giropops
+    environment:
+      REDIS_HOST: redis
+    env_files:
+      - .env
+    volumes:
+      - type: volume
+        source: strigus
+        target: /strigus
+    depends_on:
+      - redis
+    deploy:
+      replicas: 3
+      labels:
+        br.com.codestream.description: "Codestream Tecnológica"
+        br.com.codestream.version: "1.0"
+      update_config:
+        parallelism: 2
+        delay: 5s
+      resources:
+        reservations:
+          cpus: 0.3
+          memory: 80MB
+        limits:
+          cpus: 0.7
+          memory: 30MB
+
+  redis:
+    image: carandre/linuxtips-redis:1.0
+    networks:
+      - giropops
+    volumes:
+      - strigus:/strigus
+
+networks:
+  giropops:
+    driver: bridge
+
+volumes:
+  strigus:
