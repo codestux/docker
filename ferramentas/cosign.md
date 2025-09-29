@@ -25,11 +25,11 @@ cosign generate-key-pair
 Somente conseguimos assinar as imagens se elas estiverem do Docker Hub. O comando abaixo pode ser executado.
 
 ```bash
-cosign sign --key cosign.key carandre/giropops-senhas-assinada:1.0
+cosign sign --key cosign.key carandre/tux-senhas-assinada:1.0
 ```
 
 ## Verificando image assinada
 
 ```bash
-cosign verify --key cosign.pub carandre/giropops-senhas-assinada:1.0
+cosign verify --key cosign.pub carandre/tux-senhas-assinada:1.0
 ```

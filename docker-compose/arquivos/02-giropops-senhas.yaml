@@ -1,10 +1,10 @@
 services:
-  giropops-senha:
-    image: carandre/linuxtips-giropops-senhas:1.0
+  tux-senha:
+    image: carandre/linuxtips-tux-senhas:1.0
     ports:
       - "5000:5000"
     networks:
-      - giropops
+      - tux
     environment:
       REDIS_HOST: redis
 
@@ -13,13 +13,13 @@ services:
     ports:
       - "6379:6379"
     networks:
-      - giropops
+      - tux
     volumes:
-      - strigus:/strigus
+      - tux:/tux
 
 networks:
-  giropops:
+  tux:
     driver: bridge
 
 volumes:
-  strigus:
+  tux:

@@ -31,7 +31,7 @@ docker network rm nome-da-rede
 ## Adicionando container a uma rede
 
 ```bash
-docker run -d --name giropops --network giropops-net -p 5000:5000 (--env ou -e) REDIS_HOST=redis carandre/linuxtips-giropops-senhas
+docker run -d --name tux --network tux-net -p 5000:5000 (--env ou -e) REDIS_HOST=redis carandre/linuxtips-tux-senhas
 ```
 
 ## Conectando e desconectando container em uma rede

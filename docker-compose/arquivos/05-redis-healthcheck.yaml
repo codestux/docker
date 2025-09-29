@@ -8,13 +8,13 @@ services:
       interval: 20s
       retries: 3
     networks:
-      - giropops
+      - tux
     volumes:
-      - strigus:/strigus
+      - tux:/tux
 
 networks:
-  giropops:
+  tux:
     driver: bridge
 
 volumes:
-  strigus:
+  tux:

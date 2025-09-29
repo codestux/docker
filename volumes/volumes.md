@@ -81,11 +81,11 @@ docker volume create nome-volume
 Montando um volume.
 
 ```bash
-docker run -it --name debian-vol -v giropops:/code-test:ro debian
+docker run -it --name debian-vol -v tux:/code-test:ro debian
 ```
 
 ```bash
-docker run -it --name debian-vol --mount type=volume,source=nome-do-volume,target=/giropops debian
+docker run -it --name debian-vol --mount type=volume,source=nome-do-volume,target=/tux debian
 ```
 
 Inspecionando um volume.

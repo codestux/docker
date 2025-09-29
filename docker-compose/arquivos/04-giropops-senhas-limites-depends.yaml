@@ -1,19 +1,19 @@
 services:
-  giropops:
-    image: carandre/linuxtips-giropops-senhas:1.0
+  tux:
+    image: carandre/linuxtips-tux-senhas:1.0
     ports:
       - "5000:5000"
-    container_name: giropops-senhas-container
+    container_name: tux-senhas-container
     networks:
-      - giropops
+      - tux
     environment:
       REDIS_HOST: redis
     env_files:
       - .env
     volumes:
       - type: volume
-        source: strigus
-        target: /strigus
+        source: tux
+        target: /tux
     depends_on:
       - redis
     deploy:
@@ -35,13 +35,13 @@ services:
   redis:
     image: carandre/linuxtips-redis:1.0
     networks:
-      - giropops
+      - tux
     volumes:
-      - strigus:/strigus
+      - tux:/tux
 
 networks:
-  giropops:
+  tux:
     driver: bridge
 
 volumes:
-  strigus:
+  tux:
