@@ -77,5 +77,7 @@ docker image tag nome-image novo-nome-imagem
 Para verificar as camadas de uma imagem o comando abaixo pode ser executado.
 
 ```bash
+docker image history nome-da-imagem:tag
+
 docker history nome-da-imagem:tag
 ```

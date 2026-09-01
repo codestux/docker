@@ -31,11 +31,12 @@ Minhas anotações dos estudos sobre Docker.
   - [Detalhes da imagem](imagem.md#verificando-informações-das-imagens)
   - [Removendo imagens de container](imagem.md#removendo-imagens)
   - [Criando image com Dockerfile](imagem.md#criando-uma-image-com-dockerfile)
+  - [Renomeando uma image](imagem.md#renomeando-uma-image)
   - [Camadas de uma imagem](imagem.md#visualizando-as-camadas-de-uma-imagem)
-<!--
 - [Dockerfile](docker-file.md#dockerfile)
   - [Configurações do Dockerfile](docker-file.md#opções-do-arquivo-dockerfile)
   - [Exemplo do arquivo Dockerfile](docker-file.md#exemplo-de-um-arquivo-dockerfile)
+<!--
   - [Configurações do Dockerfile Multistage](multistage.md#multistage)
   - [Exemplo do arquivo Dockerfile Multistage](multistage.md#exemplo-de-um-multi-stage)
 - [Volumes](volumes.md#docker-volumes)
