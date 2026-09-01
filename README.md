@@ -13,7 +13,7 @@ Minhas anotações dos estudos sobre Docker.
   - [NixOS](instalacao.md#nixOS)
   - [Verificando a versão do Docker](instalacao.md#verificando-a-versão-do-docker)
   - [Testando o ambiente Docker](instalacao.md#testando-o-ambiente-docker)
-<!--
+
 - [Gerenciando container no Docker](container.md#gerenciando-container)
   - [Criando container](container.md#criando-um-container)
   - [Acessando container](container.md#acessando-um-container)
@@ -32,6 +32,7 @@ Minhas anotações dos estudos sobre Docker.
   - [Removendo imagens de container](imagem.md#removendo-imagens)
   - [Criando image com Dockerfile](imagem.md#criando-uma-image-com-dockerfile)
   - [Camadas de uma imagem](imagem.md#visualizando-as-camadas-de-uma-imagem)
+<!--
 - [Dockerfile](docker-file.md#dockerfile)
   - [Configurações do Dockerfile](docker-file.md#opções-do-arquivo-dockerfile)
   - [Exemplo do arquivo Dockerfile](docker-file.md#exemplo-de-um-arquivo-dockerfile)
