@@ -36,7 +36,6 @@ Minhas anotações dos estudos sobre Docker.
 - [Dockerfile](docker-file.md#dockerfile)
   - [Configurações do Dockerfile](docker-file.md#opções-do-arquivo-dockerfile)
   - [Exemplo do arquivo Dockerfile](docker-file.md#exemplo-de-um-arquivo-dockerfile)
-<!--
   - [Configurações do Dockerfile Multistage](multistage.md#multistage)
   - [Exemplo do arquivo Dockerfile Multistage](multistage.md#exemplo-de-um-multi-stage)
 - [Volumes](volumes.md#docker-volumes)
@@ -63,6 +62,7 @@ Minhas anotações dos estudos sobre Docker.
   - [Gerando chaves pública e privada](cosign.md#gerando-o-par-de-chaves-privada-e-pública)
   - [Assinando uma imagem](cosign.md#assinando-uma-imagem)
   - [Verificando imagem assinada](cosign.md#verificando-image-assinada)
+<!--
 - [Rede Docker](networks.md#rede-docker)
   - [Criando redes](networks.md#criando-uma-rede)
   - [Listando redes](networks.md#listando-redes)
